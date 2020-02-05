@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="wheatherapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U6e-Nn-0FT">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="yc2-bN-Ssx">
+                                        <rect key="frame" x="50" y="96" width="314" height="462.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yLe-20-aSR">
+                                                <rect key="frame" x="0.0" y="0.0" width="314" height="100.5"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Day" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pUT-Ak-nIf">
+                                                <rect key="frame" x="0.0" y="120.5" width="314" height="101"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="weather state" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sPc-9I-YnO" userLabel="resultlabel">
+                                                <rect key="frame" x="0.0" y="241.5" width="314" height="100.5"/>
+                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Degree" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Djh-2C-IVr">
+                                                <rect key="frame" x="0.0" y="362" width="314" height="100.5"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="yc2-bN-Ssx" firstAttribute="top" secondItem="U6e-Nn-0FT" secondAttribute="top" constant="96" id="V6G-RN-jnw"/>
+                                    <constraint firstAttribute="trailing" secondItem="yc2-bN-Ssx" secondAttribute="trailing" constant="50" id="iDT-ke-iVw"/>
+                                    <constraint firstAttribute="bottom" secondItem="yc2-bN-Ssx" secondAttribute="bottom" constant="337.5" id="xee-Pn-bpg"/>
+                                    <constraint firstItem="yc2-bN-Ssx" firstAttribute="leading" secondItem="U6e-Nn-0FT" secondAttribute="leading" constant="50" id="yLe-7T-dJa"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="U6e-Nn-0FT" secondAttribute="trailing" id="Jij-Ye-g21"/>
+                            <constraint firstItem="U6e-Nn-0FT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="u4P-KS-JTm"/>
+                            <constraint firstAttribute="bottom" secondItem="U6e-Nn-0FT" secondAttribute="bottom" id="ypG-Zo-Ua9"/>
+                            <constraint firstItem="U6e-Nn-0FT" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="zTj-UM-Uue"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundView" destination="U6e-Nn-0FT" id="H9D-5t-sgI"/>
+                        <outlet property="citylabel" destination="yLe-20-aSR" id="mLd-6e-OEw"/>
+                        <outlet property="daylabel" destination="pUT-Ak-nIf" id="04R-96-4b2"/>
+                        <outlet property="degreelabel" destination="Djh-2C-IVr" id="0YK-DW-o59"/>
+                        <outlet property="resultlabel" destination="sPc-9I-YnO" id="noK-P0-Th3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-65.217391304347828" y="97.767857142857139"/>
+        </scene>
+    </scenes>
+</document>
